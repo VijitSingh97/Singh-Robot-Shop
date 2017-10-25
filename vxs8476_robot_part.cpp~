@@ -1,0 +1,13 @@
+#include "vxs8476_robot_part.h" 
+#include <string.h>
+
+//Constructor of robot part
+Robot_Part::Robot_Part(string n, int mn, double c, string d, string i)
+{
+	name = n;
+	model_number = mn;
+	cost = c;
+	description = d;
+	image_filename = i;
+}
+

@@ -1,0 +1,12 @@
+#Example MakeFile
+main: vxs8476_main.cpp vxs8476_media.cpp vxs8476_video_store.cpp
+	g++ -std=c++11 vxs8476_main.cpp vxs8476_media.cpp vxs8476_video_store.cpp -o vxs8476_main
+	./vxs8476_main
+robotparttest:
+	g++ -std=c++11 robot_parttest.cpp vxs8476_robot_part.cpp -o robot_parttest
+	./robot_parttest
+robotmodeltest:
+	g++ -std=c++11 robot_modeltest.cpp vxs8476_robot_part.cpp vxs8476_robot_model.cpp -o robot_modeltest
+	./robot_modeltest
+clean:
+	rm -f *.o vxs8476_main robot_parttest robot_modeltest
